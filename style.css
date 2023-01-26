@@ -1,0 +1,22 @@
+
+
+
+
+
+.nav{
+    margin: auto;
+    display: flex;
+    background-color: aqua;
+}
+
+
+.hambergur {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamberger .line{
+ color:white ;
+ display: block;
+
+}
