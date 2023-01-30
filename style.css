@@ -1,12 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(22, 133, 133);
+}
 
 
-
-
-
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
 .nav{
+    width:90% ;
     margin: auto;
     display: flex;
-    background-color: aqua;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -15,8 +35,54 @@
     cursor: pointer;
 }
 
-.hamberger .line{
- color:white ;
+.hambergur .line{
  display: block;
+ width: 40px;
+ height: 5px;
+ background-color: white ;
+ margin-bottom: 10px ;
 
 }
+.nav_link{
+    position: fixed;
+    width: 100%;
+    top: 4.0rem;
+    background-color: rgb(19, 150, 150);
+}
+
+.nav_link a{
+    display: block;
+    text-align: center;
+    padding:10px 0 ;
+}
+
+.nav_link a:hover{
+    color: orangered;
+}
+
+.hide{
+    display:none ;
+}
+
+@media screen and (min-width: 600px) {
+    .nav_link{
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+        margin-right: 20px ;
+
+    }
+
+    
+    .nav_link a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    
+    .hambergur{
+        display: none;
+    }
+
+}
+    
